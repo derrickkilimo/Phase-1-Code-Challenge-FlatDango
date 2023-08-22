@@ -1,0 +1,116 @@
+/* Your existing styles remain the same */
+
+.film-selection label,
+.film-selection select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ticket-purchased-msg {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8f2222;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #932121;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    color: #000000;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(194, 32, 32);
+}
+
+.film-selection {
+    flex-basis: 30%;
+    background-color: #978f8f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(157, 127, 127, 0.1);
+}
+
+#film-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a19a9a;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.selected-movie {
+    flex-basis: 65%;
+    background-color: #9c1717;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected-movie img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px 20px;
+}
+
+.buy-ticket-btn {
+    background-color: #28a745;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-ticket-btn:hover {
+    background-color: #218838;
+}
+
+.ticket-purchased-msg {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .film-selection, .selected-movie {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+.footer{
+    background-color: #932121;
+} 
